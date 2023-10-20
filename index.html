@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive CV</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
              <div class="imgBox">
                 <img src="Profile Photo.png" alt="profile photo">
              </div>
-             <h2>Sary Sheleweet <br> <span>Développeur FullStack</span></h2>
+             <h2>Sary Sheleweet <br> <span id="job__post">Développeur FullStack</span></h2>
         </div>
 
         <div class="contactInfo"> 
@@ -34,29 +35,24 @@
                     <span class="text"><a href="https://sarysheleweet.github.io/MY_CV_Updated/">My Website</a></span>
                 </li>
                 <li>
-                    <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                    <span class="icon"><i class="fab fa-linkedin"></i></span>
                     <span class="text"><a href="https://rb.gy/0f5yh">Sary Sheleweet</a></span>
                 </li>
+                <li>
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span class="text"><a href="https://github.com/SarySheleweet">Sary Sheleweet</a></span>
+                    </li>
                 <li>
                     <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
                     <span class="text">Marseille, France</span>
                 </li>
+                
             </ul>
         </div>
 
         <div class="contactInfo education"> 
             <h3 class="title">Education</h3>
             <ul>
-                <li>
-                    <h5>2023 - 2024</h5>
-                    <h4>Développeur Web et Web Mobile</h4>
-                    <h4>Simplon, Marseille</h4>
-                </li>
-                <li>
-                    <h5>2023 - 2023</h5>
-                    <h4>Apple Foundation Program</h4>
-                    <h4>Simplon, Marseille</h4>
-                </li>
                 <li>
                     <h5>2005 - 2010</h5>
                     <h4>Littérature Anglaise</h4>
@@ -69,27 +65,18 @@
 
         <div class="contactInfo language"> 
             <h3 class="title">Langues</h3>
-            <ul>
+            <ul class="language__text">
                 <li>
-                    <span class="text">Français</span>
-                    <span class="percent">
-                        <div style="width: 80%;"></div>
-                    </span>
+                    <span class="language__level">Français: Courrant</span>
                 </li>
-                <li><span class="text">Anglais</span>
-                    <span class="percent">
-                        <div style="width: 90%;"></div>
-                    </span>
+                <li>
+                    <span class="language__level">Anglais: Courrant</span>
                 </li>
-                <li><span class="text">Arabe</span>
-                    <span class="percent">
-                        <div style="width: 90%;"></div>
-                    </span>
+                <li>
+                    <span class="language__level">Arabe: Courrant</span>
                 </li>
-                <li><span class="text">Arménien</span>
-                    <span class="percent">
-                        <div style="width: 90%;"></div>
-                    </span>
+                <li>
+                    <span class="language__level">Arménien: Courrant</span>
                 </li>
             </ul>
         </div>
@@ -101,12 +88,32 @@
             <div class="about">
                 <h2 class="title2">Profil
                 </h2>
-                <p><i>Actuellement en formation Développeur Web et Web Mobile auprès Simplon, Marseille.
-                     Maîtrise des outils de développement Web, HTML5, CSS, JavaScript et gestion de bases de données en SQL.
-                     En recherche d'un stage en Web Développement.</i>
-                    
+                <p><i>Recherche de stage non-rémunéré. Objectif secondaire: transformer ce stage en prépéeriode d'essai
+                    pour un alternance en Développement Web, Concepteur d'Application Mobile en septembre 2024.<br><br>
+                    Aprés 10 ans d'expérience dans la traduction, j'ai décidé à me convertir en Dev Web car le domaine m'a attiré avec ses défis logiques et sa créativité. J'étais impliqué rapidement et j'ai trouvé ma passionne en Développement Web. </i>
                  </p>
             </div>
+
+
+            <div class="about skills">
+                <h2 class="title2">Compétences</h2>
+                <ul class="competences">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                    <li>PHP</li>
+                    <li>Node.js</li>
+                    <li>SQL</li>
+                    <li>Angular</li>
+                    <li>Python3</li>
+                    <li>Swift4</li>
+                    <li>Git</li>
+                    <li>Figma</li>
+                </ul>
+
+
+
 
             <div class="about">
                 <h2 class="title2">
@@ -121,9 +128,13 @@
 
                     <div class="text">
                         <h4>Développeur Web et Web Mobile</h4>
-                        <p>Conception de sites internet en langage HTML5, CSS3.
-                        Maîtrise de langages JavaScript, React.js. et gestion de données en SQL.
-                        Travail en front-end framework en React.js et back-end framework en Node.js.
+                        <ul class="experience__bullets">
+                            <li>Conception de sites internet en langage HTML5, CSS3.</li>
+                            <li>Maîtrise de langages JavaScript, React.js. et gestion de données en SQL.</li>
+                            <li>Mâitrise de front-end framework en React.js et back-end en langage PHP et framework en Node.js.</li>
+                        </ul>
+                        
+                        
                     </p>
                     </div>
                 </div>
@@ -138,8 +149,14 @@
                 </div>
 
                 <div class="text">
-                    <h4>Développeur en langage Swift4</h4>
-                    <p>Conception d'application mobile sur Figma et en suite le développement en langage Swift 4.</p>
+                    <h4>Formation en développement iOS</h4>
+                    <ul class="experience__bullets">
+                        <li>Conception de maquette d'application mobile sur Figma.</li>
+                        <li>Acquérir les bases du langage de programmation Swift.</li>
+                        <li>Acquérir une connaissance de UX design d’Apple.</li>
+                        <li>Réalisation d’un prototype d’une application iOS avec Swift4.</li>
+                        <li>Développer la collaboration en équipe et l'apprentissage en autonomie.</li>
+                      </ul>
                 </div>
             </div>
         </div>
@@ -153,10 +170,12 @@
 
                     <div class="text">
                         <h4>Traducteur en Anglais</h4>
-                        <p>Traducteur de: sites internet, films et études socio-politiques; "Power: A Practical Guide For Facilitating Social Change" pour Carnegie UK Trust;
-                            Chess.com site et application mobile de 2015 à 2020; "The War Show", documentaire syrien avec sous-titrage;
-                            "Waw Al Wasel" collective, et responsable de diffusions de courts-métrages et publications de textes et site d'association des exilés, EKO.
-                        </p>
+                        <ul class="experience__bullets">
+                            <li>Traducteur de: sites internet, films et études socio-politiques.</li>
+                            <li>Traducteur deChess.com site et application mobile de 2015 à 2020.</li>
+                            <li>Traducteur de "The War Show", documentaire syrien avec sous-titrage.</li>
+                            <li>Traducteur de site d'association des exilés, EKO, Marseille.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -167,62 +186,21 @@
                 <div class="box">
                      <div class="year_company">
                          <h5>2021 oct - 2021 dec</h5>
-                         <h5>Cabinet Mezouar, Marseille</h5>
+                         <h5>Cabinet Mezouar</h5>
                     </div>
 
                     <div class="text">
                         <h4>Agent Administratif</h4>
-                        <p>Préparation et classement de dossiers clients. Rédaction de lettres de recours et demandes d'appel. Préparation de tableaux excel et des calculs. Accueil de clients
-                        </p>
+                        <ul class="experience__bullets">
+                            <li>Préparation et classement de dossiers clients.</li>
+                            <li>Rédaction de lettres de recours et demandes d'appel.</li>
+                            <li>Préparation de tableaux excel et des calculs.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="about skills">
-                <h2 class="title2">Compétences</h2>
-                <div class="box">
-                    <h4>HTML5</h4>
-                    <div class="percent">
-                        <div style="width: 90%;"></div>
-                    </div>
-                </div>
-                <div class="box">
-                    <h4>CSS</h4>
-                    <div class="percent">
-                        <div style="width: 90%;"></div>
-                    </div>
-                </div>
-                <div class="box">
-                    <h4>JavaScript</h4>
-                    <div class="percent">
-                        <div style="width: 90%;"></div>
-                    </div>
-                </div>
-                <div class="box">
-                    <h4>React.js</h4>
-                    <div class="percent">
-                        <div style="width: 90%;"></div>
-                    </div>
-                </div>
-                <div class="box">
-                    <h4>SQL</h4>
-                    <div class="percent">
-                        <div style="width: 90%;"></div>
-                    </div>
-                </div>
-                <div class="box">
-                    <h4>Angular</h4>
-                    <div class="percent">
-                        <div style="width: 70%;"></div>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <h4>Python 3</h4>
-                    <div class="percent">
-                        <div style="width: 90%;"></div>
-                    </div>
-                </div>
-            </div>
+            
+                
             
 
             <div class="about interests">
