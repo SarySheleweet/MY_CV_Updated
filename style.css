@@ -11,6 +11,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    color: #575086;
 }
 
 #job__post{
@@ -62,18 +63,11 @@ body{
 }
 
 .profileText h2{
-    color: #fff;
-    font-size: 1.5em;
-    margin-top: 20px;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 600;
-    line-height: 1.4em;
+    display: none;
 }
 
 .profileText h2 span{
-    font-size: 0.6em;
-    font-weight: 300;
+    display: none;
 }
 
 .contactInfo{
@@ -131,18 +125,21 @@ a:hover{
 }
 
 .contactInfo.education h5{
-    color: white;
+    color: #fff;
     font-weight: 500;
+    margin-bottom: 8px;
 }
 
 .contactInfo.education h4:nth-child(2){
     color: #fff;
-    font-weight: 600;  
+    font-weight: 600;
+    margin-bottom: 8px;
 }
 
 .contactInfo.education h4{
     color: #fff;
     font-weight: 300;
+    margin-bottom: 8px;
 }
 
 .language__text{
@@ -160,17 +157,29 @@ a:hover{
     margin-bottom: 50px;
 }
 
+.about p{
+    color: #575086;
+}
+
 .about:last-child{
     margin-bottom: 0;
 }
 
 .title2{
-    color: #003147;
+    color: darkblue;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
 
+h2{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    line-height: 40px;
+    color: darkblue;
+}
 .competences{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -221,7 +230,7 @@ p{
 
 .interests ul li{
     list-style: none;
-    color: #333;
+    color: #575086;
     font-weight: 500;
     margin: 10px 0;
 }
