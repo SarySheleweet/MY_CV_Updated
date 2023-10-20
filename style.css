@@ -180,6 +180,7 @@ a:hover{
     color: #03a9f4;
     font-weight: bolder;
     margin-bottom: 30px;
+    margin-left: 40px;
 }
 
 p{
@@ -225,9 +226,24 @@ p{
     margin: 10px 0;
 }
 
-.interests ul li .fa{
+.fas.fa-microphone{
     color: #03a9f4;
-    font-size: 18px;
+    font-size: 20px;
+}
+
+.fas.fa-chess-knight{
+    color: #03a9f4;
+    font-size: 20px;
+}
+
+.fas.fa-gamepad{
+    color: #03a9f4;
+    font-size: 20px;
+}
+
+.fas.fa-utensils{
+    color: #03a9f4;
+    font-size: 20px;
 }
 
 @media (max-width: 1000px){
