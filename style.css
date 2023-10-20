@@ -111,6 +111,14 @@ a:visited{
     color: #fff;
 }
 
+a:focus{
+    color: #fff;
+}
+
+a:hover{
+    color: #fff;
+}
+
 .contactInfo ul li{
     position: relative;
     list-style: none;
