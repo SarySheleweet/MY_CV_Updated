@@ -162,6 +162,9 @@ a:hover{
     margin-top: 50px;
     margin-bottom: 30px;
     color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .about_interests ul li {
