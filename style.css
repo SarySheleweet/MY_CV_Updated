@@ -89,28 +89,34 @@ body{
     cursor: pointer;
 }
 
-.contactInfo ul li .icon{
+.contactInfo ul li .icon {
     display: inline-block;
     width: 30px;
     font-size: 18px;
     color: #03a9f4;
 }
 
-.contactInfo ul li span{
+.contactInfo ul li span {
     color: #fff;
-    font-weight: 300; 
+    font-weight: 300;
+    text-decoration: none; 
 }
 
-a:visited{
+.contactInfo ul li a {
+    text-decoration: none;
+}
+
+a:visited {
     color: #fff;
 }
 
-a:focus{
+a:focus {
     color: #fff;
 }
 
 a:hover{
     color: #fff;
+    text-decoration: none;
 }
 
 .contactInfo ul li{
@@ -130,13 +136,13 @@ a:hover{
     margin-bottom: 8px;
 }
 
-.contactInfo.education h4:nth-child(2){
+.contactInfo.education h4:nth-child(2) {
     color: #fff;
     font-weight: 600;
     margin-bottom: 8px;
 }
 
-.contactInfo.education h4{
+.contactInfo.education h4 {
     color: #fff;
     font-weight: 300;
     margin-bottom: 8px;
@@ -146,6 +152,23 @@ a:hover{
     line-height: 40px;
 }
 
+.about_intersts {
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+}
+
+.about_interests h3 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.about_interests ul li {
+    list-style: none;
+    color: #fff;
+    margin-bottom: 25px;
+}
 
 .container .right{
     position: relative;
@@ -159,6 +182,13 @@ a:hover{
 
 .about p{
     color: #575086;
+}
+
+.experience__bullets_container p{
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: 550;
+    font-size: 14px;
 }
 
 .about:last-child{
@@ -222,38 +252,6 @@ p{
     text-transform: uppercase;
     color: #2a7da2;
     font-size: 16px;
-}
-
-.interests ul{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.interests ul li{
-    list-style: none;
-    color: #575086;
-    font-weight: 500;
-    margin: 10px 0;
-}
-
-.fas.fa-microphone{
-    color: #03a9f4;
-    font-size: 20px;
-}
-
-.fas.fa-chess-knight{
-    color: #03a9f4;
-    font-size: 20px;
-}
-
-.fas.fa-gamepad{
-    color: #03a9f4;
-    font-size: 20px;
-}
-
-.fas.fa-utensils{
-    color: #03a9f4;
-    font-size: 20px;
 }
 
 @media (max-width: 1000px){
